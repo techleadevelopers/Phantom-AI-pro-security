@@ -1,0 +1,7 @@
+{
+    "uid": "UID_DEMO_RUN",
+    "original_file": "demo_arquivo.txt",
+    "recovered_from": "demo_arquivo.txt.locked",
+    "sha256": "32321c909b4fa7e3362a47fffaa373f1aa2667078a52a8ef32a75ee5be5321a8",
+    "timestamp": "2025-04-19T22:50:40.844427+00:00"
+}

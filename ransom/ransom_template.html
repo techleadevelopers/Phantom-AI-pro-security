@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🔐 RansomLab-Pro | Critical Threat Detected — UID {UID}</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/4e/High-contrast-dialog-warning.svg" type="image/svg+xml">
+
+  <style>
+    body {{
+      margin: 0;
+      padding: 0;
+      background: repeating-linear-gradient(45deg, #0d0d0d, #0d0d0d 10px, #111 10px, #111 20px);
+      animation: glitchBg 1.2s infinite linear;
+      font-family: 'Consolas', monospace;
+      color: #f1f1f1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }}
+
+    @keyframes glitchBg {{
+      0% {{ background-position: 0 0; }}
+      100% {{ background-position: 20px 20px; }}
+    }}
+
+    .container {{
+      max-width: 720px;
+      background-color: #111;
+      border: 2px solid crimson;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 18px red, 0 0 8px crimson;
+      text-align: center;
+    }}
+
+    h1 {{
+      color: crimson;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 0 4px crimson;
+    }}
+
+    pre {{
+      font-size: 1rem;
+      line-height: 1.5;
+      text-align: left;
+      white-space: pre-wrap;
+      margin: 0 auto 2rem auto;
+      max-height: 240px;
+      overflow-y: auto;
+      padding: 0.5rem;
+      background-color: #1a1a1a;
+      border-left: 3px solid crimson;
+      box-shadow: inset 0 0 8px #300;
+      color: #f1f1f1;
+    }}
+
+    .qrcode {{
+      margin: 2rem auto;
+      display: flex;
+      justify-content: center;
+    }}
+
+    .qrcode img {{
+      border: 2px solid limegreen;
+      border-radius: 8px;
+      box-shadow: 0 0 12px limegreen;
+      transition: all 0.3s ease-in-out;
+    }}
+
+    .qrcode img:hover {{
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #00ff00;
+    }}
+
+    .btc {{
+      color: limegreen;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }}
+
+    #timer {{
+      font-size: 1.5rem;
+      color: yellow;
+      margin-top: 1.5rem;
+    }}
+
+    .footer {{
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #888;
+    }}
+
+    .footer span {{
+      color: crimson;
+      text-shadow: 0 0 8px crimson;
+    }}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>{TITLE}</h1>
+    <pre id="typed-body">_</pre>
+
+    <div class="qrcode">
+      <img src="data:image/png;base64,{QR_BASE64}" alt="QR Code">
+    </div>
+
+    <div class="btc">
+      💰 <span id="btc-address">{BTC}</span>
+    </div>
+
+    <div id="timer">⏳ Loading timer...</div>
+
+    <div class="footer">
+      {FOOTER} | <span>UID: {UID}</span>
+    </div>
+  </div>
+
+  <script>
+    // Typewriter animation
+    const fullText = `{BODY}`.split('');
+    const preEl = document.getElementById("typed-body");
+    let i = 0;
+
+    function typeEffect() {{
+      if (i < fullText.length) {{
+        preEl.textContent = preEl.textContent.slice(0, -1) + fullText[i++] + '_';
+        setTimeout(typeEffect, 20);
+      }} else {{
+        preEl.textContent = preEl.textContent.slice(0, -1);
+      }}
+    }}
+    typeEffect();
+
+    // Countdown Timer
+    let seconds = {TIMER};
+    function updateTimer() {{
+      const timerEl = document.getElementById("timer");
+      const m = String(Math.floor(seconds / 60)).padStart(2, '0');
+      const s = String(seconds % 60).padStart(2, '0');
+      timerEl.textContent = `⏳ Time remaining: ${{m}}:${{s}}`;
+      if (seconds > 0) {{
+        seconds--;
+        setTimeout(updateTimer, 1000);
+      }} else {{
+        timerEl.textContent = "⛔ Time expired!";
+        timerEl.style.color = "crimson";
+      }}
+    }}
+    updateTimer();
+  </script>
+</body>
+</html>

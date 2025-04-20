@@ -1,0 +1,14 @@
+echo "node_modules/
+.env
+*.pyc
+__pycache__/
+dist/
+output/
+*.log
+*.iso
+*.apk
+*.exe
+*.pem
+*.key
+.vscode/
+.idea/" >> .gitignore

