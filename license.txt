@@ -1,0 +1,86 @@
+RansomLab-Pro Cyber Simulation License (RLCSL)
+v1.5 — © 2025 Paulo | OfitF DevSec Research Lab
+
+---
+
+🚨 USO RESTRITO E CONTROLADO
+Este software é distribuído **exclusivamente para fins de:
+- Pesquisa forense avançada
+- Simulação de ataques reais controlados
+- Estudo técnico de ciberameaças
+- Desenvolvimento de defesas, mitigação e análise
+
+⚠️ É ESTRITAMENTE PROIBIDO:
+- Utilizar qualquer parte deste código em ambiente de produção real fora de sandbox/laboratório
+- Utilizar com objetivo de causar dano, extorsão, sabotagem, roubo, fraude, espionagem ou interrupção de serviço
+- Integrar este projeto a qualquer campanha ofensiva contra terceiros (públicos ou privados)
+- Redistribuir versões alteradas com capacidade maliciosa funcional
+
+---
+
+🧪 AMBIENTE PERMITIDO
+Este projeto deve ser executado somente em:
+- Máquinas virtuais (VMWare, VirtualBox, QEMU, Proxmox)
+- Sandboxes isoladas (local ou cloud)
+- Ambientes forenses dedicados para simulação e defesa
+- Plataformas acadêmicas com objetivo educacional
+- Laboratórios internos de segurança ofensiva/autônoma
+
+---
+
+🧠 CONCESSÃO LIMITADA
+Você pode:
+✅ Estudar o código para fins de aprendizado técnico
+✅ Modificar para simulações internas em seu laboratório
+✅ Integrar em sistemas de defesa, análise e resposta a incidentes
+✅ Usar como referência para pesquisa ou desenvolvimento de ferramentas de cibersegurança legítimas
+
+Você NÃO pode:
+❌ Usar este projeto ou partes dele para obter vantagem financeira maliciosa
+❌ Comercializar payloads derivados de qualquer módulo
+❌ Executar partes ofensivas fora de ambiente privado ou de pesquisa isolada
+❌ Integrar qualquer componente com botnets, RATs públicos, ransomware ativo real ou blackhat services
+
+---
+
+📜 ISENÇÃO DE RESPONSABILIDADE
+Este projeto é fornecido "no estado em que se encontra", **sem qualquer garantia implícita de funcionalidade, segurança ou legalidade de uso**. O autor **não se responsabiliza por quaisquer danos, perdas, vazamentos, consequências jurídicas ou financeiras decorrentes do uso inadequado deste software**.
+
+**VOCÊ É O ÚNICO RESPONSÁVEL PELO USO DESTE CÓDIGO.**
+
+---
+
+🛡️ COMPLIANCE
+Este projeto:
+- NÃO foi criado para causar danos reais
+- NÃO contém backdoors ativas para uso em ambientes externos
+- NÃO se conecta a redes externas nem executa payloads sem interação
+- PODE conter simulações realistas de comportamento malicioso com objetivo estritamente técnico
+
+---
+
+💡 CRÉDITOS E RESPEITO À COMUNIDADE
+O RansomLab-Pro faz referência a técnicas utilizadas por grupos reais para fins de aprendizado e criação de defesas.
+Ele NÃO glorifica nem apoia o cibercrime.
+
+Autores, pesquisadores e mantenedores deste projeto se posicionam firmemente a favor de:
+- Defesa cibernética ética
+- Fortalecimento da segurança digital global
+- Combate ao uso malicioso de IA
+
+---
+
+📬 CONTATO AUTOR
+Paulo [Phantom Lab]
+https://github.com/techleadevelopers
+
+---
+
+🔏 LICENÇA PERSONALIZADA INSPIRADA EM:
+MIT / DEFCON Cyber Offensive License / Creative Commons Zero / Zero-Day Research Ethics Framework
+
+---
+
+VERSÃO: RLCSL-v1.5  
+DATA: Abril de 2025  
+STATUS: RESEARCH-ONLY RELEASE  
