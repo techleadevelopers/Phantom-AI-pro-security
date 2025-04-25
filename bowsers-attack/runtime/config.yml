@@ -1,0 +1,27 @@
+MUTEX_NAME: "Global\\StealthLauncherMutex"
+LOG_FILE: "C:\\Users\\Paulo\\stealth_launcher.log"
+VERBOSE: true
+MAX_RUNTIME_S: 300
+
+# Defina ao menos 1 endpoint de C2 de teste
+C2_ENDPOINTS:
+  - "https://c2-lab.local/api/beacon"
+
+# Nomes de processos EDR para fingerprint
+EDR_PROCESS_NAMES:
+  - "CrowdStrike"
+  - "CarbonBlack"
+
+SANDBOX_DNS_LOOKUPS:
+  - "sandbox.check[.]com"
+
+LATENCY_THRESHOLD_MS: 100
+MIN_HUMAN_ACTIONS: 3
+
+PAYLOAD_PATH: "C:\\Windows\\System32\\notepad.exe"
+TARGET_PROCESS: "notepad.exe"
+
+OBFUSCATE: false
+
+# Opcional, caso queira forçar assinatura
+SIGNATURE_HASH: "3a7bd3e2360adb3b7c1a6e68f0d6e4e5b7f8a9c0d1e2f3a4b5c6d7e8f9a0b1c"

@@ -1,1 +1,0 @@
-echo "Mensagem ultra secreta para criptografar!" > test_payload.txt

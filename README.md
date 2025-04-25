@@ -115,6 +115,7 @@ apt_campaigns/	Lazarus, APT28, Volt Typhoon (simulado)	Ciberespionagem
 ai_modules/	Polimorfismo, model poisoning, payloads IA	Malware adaptativo
 
 🔥 Exemplos Reais Simulados
+
 💣 MOVEit Supply Chain Attack (supply_chain/)
 
 🧠 Deepfake de CEO (phishing/deepvoice_sim.py)

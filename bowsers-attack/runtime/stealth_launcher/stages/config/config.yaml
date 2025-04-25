@@ -1,0 +1,47 @@
+# runtime/stealth_launcher/stages/config/config.yaml
+
+# Nome único para evitar múltiplas instâncias
+MUTEX_NAME: "Global\\StealthLauncherMutex"
+
+# Arquivo de log principal
+LOG_FILE: "C:\\Users\\Paulo\\stealth_launcher.log"
+
+# Verbose no console
+VERBOSE: true
+
+# Tempo máximo de execução (segundos)
+MAX_RUNTIME_S: 300
+
+# Endpoints de C2 para teste (pelo menos um)
+C2_ENDPOINTS:
+  - "https://c2-lab.local/api/beacon"
+
+# Processos de EDR para fingerprint
+EDR_PROCESS_NAMES:
+  - "CrowdStrike"
+  - "CarbonBlack"
+
+# Domínios de sandbox a verificar via DNS
+SANDBOX_DNS_LOOKUPS:
+  - "sandbox.check[.]com"
+
+# Limites de timing para detecção de análise automatizada
+LATENCY_THRESHOLD_MS: 100
+MIN_HUMAN_ACTIONS: 3
+
+# Payload a ser executado
+PAYLOAD_PATH: "C:\\Windows\\System32\\notepad.exe"
+TARGET_PROCESS: "notepad.exe"
+
+# Não ofuscar (para desenvolvimento)
+OBFUSCATE: false
+
+# Opções de verificação de assinatura:
+# 1) Se você tem o hash correto, substitua abaixo pelo SHA256 real de notepad.exe
+#    (execute em PowerShell:
+#       Get-FileHash C:\Windows\System32\notepad.exe -Algorithm SHA256
+#    )
+# SIGNATURE_HASH: "COLE_AQUI_O_HASH_CORRETO_SHA256"
+#
+# 2) Para desativar a verificação durante o desenvolvimento, deixe null ou remova:
+SIGNATURE_HASH: "7506efd44e4bcb159bd298c78a9e21c579c05667b22cecb5db6d1703b6c1da04"

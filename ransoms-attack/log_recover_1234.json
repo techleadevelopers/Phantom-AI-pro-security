@@ -1,0 +1,7 @@
+{
+    "uid": "1234",
+    "original_file": "documento.txt",
+    "recovered_from": "documento.txt.locked",
+    "sha256": "bacafbd499246286adfc827bf0b63f8d7450aade3bd697aa80c051e353359484",
+    "timestamp": "2025-04-20T14:03:19.267073+00:00"
+}
