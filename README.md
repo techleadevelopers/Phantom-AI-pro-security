@@ -1,4 +1,4 @@
-# 💀 RansomLab-Pro — Offensive Cyber Threat Simulation Framework
+# 💀 PhantomAI-Pro — Offensive Cyber Threat Simulation Framework
 
 > **⚠️ PROJETO EDUCACIONAL E DE PESQUISA**
 >  
