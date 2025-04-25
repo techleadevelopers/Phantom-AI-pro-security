@@ -1,0 +1,3 @@
+[submodule "lfi-attack-go"]
+	path = lfi-attack-go
+	url = https://github.com/techleadevelopers/lfi-tessla-ia.git
