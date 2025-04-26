@@ -38,13 +38,20 @@ O laboratório é dividido em **4 grandes módulos de ataque**, cada um especial
 |:--------|:---------|:-------------------|
 | **browser-attack/** | Comprometimento de navegadores e roubo de sessões | Cookie theft, MFA bypass, token hijacking, phishing deepfake |
 | **crypto-attack/** | Ataques de cripto-extorsão e roubo de carteiras | Clipper stealers, crypto-wallet dumpers, clipboard hijack |
-| **lfi-ai-attack/** | Simulação de exploração de LFI/RFI com IA | LFI fuzzers IA-driven, payload generation, WAF bypass |
-| **ransom-attack/** | Simulação de operações ransomware modernas | Gerador de ransom note, criptografia AES+RSA, evasão forense |
+| **lfi-ai-attack/** | Ataques de LFI/RFI com IA Embarcada e Algoritimos | LFI fuzzers IA-driven, payload generation, WAF bypass |
+| **ransom-attack/** | Simulação de operações ransomware IA Embarcada e Learning | ransom note, criptografia AES+RSA, evasão forense |
 
 Cada sessão é independente e pode ser usada para simular ataques combinados ou isolados.
 
 > 🔵 **O Laboratório ainda está em expansão e novos módulos serão adicionados.**
-
+| Seção | Objetivo | Técnicas Principais |
+|:--------|:---------|:-------------------|
+| **fileless-attack/** | Execução de ataques em memória | OAuth token theft, Azure AD abuse, session hijacking Office365 |
+| **cloud-saas-attack/** | Comprometimento de ambientes cloud e SaaS | Clipper stealers, crypto-wallet dumpers, clipboard hijack |
+| **firmware-bootkit-attack/** | Simulações de ataques industriais e IoT | UEFI Bootkits, NV Variable Injection, Bootloader backdooring |
+| **iot-scada-attack/** | Simulação de operações ransomware IA Embarcada e Learning | Exploração de PLCs, modbus/tcp fuzzing, backdoor de firmware de IoT |
+| **ai-adversarial-attack/** | Ataques contra modelos de IA e machine learning | Model poisoning, prompt injection, adversarial examples contra LLMs |
+---
 ---
 
 # 🧰 Mapa de Diretórios Atualizado
