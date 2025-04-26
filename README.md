@@ -44,6 +44,7 @@ O laboratório é dividido em **4 grandes módulos de ataque**, cada um especial
 Cada sessão é independente e pode ser usada para simular ataques combinados ou isolados.
 
 > 🔵 **O Laboratório ainda está em expansão e novos módulos serão adicionados.**
+
 | Seção | Objetivo | Técnicas Principais |
 |:--------|:---------|:-------------------|
 | **fileless-attack/** | Execução de ataques em memória | OAuth token theft, Azure AD abuse, session hijacking Office365 |
